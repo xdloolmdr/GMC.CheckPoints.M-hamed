@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="public/css/Car-Collection.css" />
+<div class="Car_Collection_Section">
+  <div class="heead">
+    <h1>Our Impressive Collection of Cars</h1>
+    <p>
+      Ranging from elegant sedans to powerful sports cars, all carefully
+      selected to provide our customers with the ultimate driving experience.
+    </p>
+  </div>
+  <nav class="Rent_Car_nav">
+    <button class="Rent_Nav Popular_rent">Popular Car</button>
+    <button class="Rent_Nav">Luxury Car</button>
+    <button class="Rent_Nav">Vintage Car</button>
+    <button class="Rent_Nav">Family Car</button>
+    <button class="Rent_Nav">Off-Road Car</button>
+  </nav>
+
+  <section>
+    <div class="Rent_cards">
+      <% CarCollection.forEach((Car)=> {%> <%-
+      include('Rent_Car',{title:Car.title,image:Car.image})%> <% }) %>
+    </div>
+  </section>
+  <div class="SeeCars"><button class="SeeAll">See All Cars</button></div>
+</div>

@@ -1,7 +1,8 @@
 {
-  "name": "first-server",
+  "name": "report",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
@@ -11,6 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "zod": "^3.24.1"
   }
 }

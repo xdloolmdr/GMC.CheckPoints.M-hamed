@@ -1,0 +1,97 @@
+.comments{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 52px;
+    margin-top: 128px;
+
+}
+.comments > span{
+    line-height: 52px;
+    font-size: 32px;
+    font-weight: 700;
+    margin:0px 68px ;
+}
+.comments p{
+    line-height: 32px;
+    opacity: 0.8;
+    font-weight: 600;
+    text-align: start;
+    font-size: 24px;
+    margin: 24px 68px;
+    width: 56ch;
+}
+.comments_user{
+    height: 80px;
+    margin: 24px 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img_infos{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     margin-top: 36px;
+     gap: -16px;
+}
+.img_infos{
+    margin-left: -40px;
+    
+}
+.img_infos h3{
+    font-size: 20px;
+    margin: -16px 68px;
+    /* margin-top: 24px; */
+    
+}
+.img_infos p{
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 16px;
+}
+.icons8--left-round {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-.72 4.594L9.595 15.28l-.72.72l.72.72l5.687 5.686L16.72 21l-4-4H23v-2H12.72l4-4z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  .icons8--right-round {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m.72 4.594L15.28 11l4 4H9v2h10.28l-4 4l1.44 1.406l5.686-5.687l.72-.72l-.72-.72l-5.687-5.686z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  
+  .comments_arrows
+  {
+    display: flex;
+    position:absolute;
+    right: 200px;
+    top: 4px;
+  }
+  .arrow-btn {
+    display: flex;
+    border-radius: 50%;
+  }
+  .arrow-btn:hover {
+    background-color: black;
+    color: white;
+  }

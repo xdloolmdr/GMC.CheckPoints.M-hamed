@@ -1,7 +1,7 @@
 {
-  "name": "first-server",
+  "name": "platform",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "hello-world.js",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."

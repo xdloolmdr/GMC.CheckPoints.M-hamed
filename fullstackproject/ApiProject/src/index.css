@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+#root{
+    min-height: 100vh;
+}
+body{
+    @apply bg-[url('/public/images/3704401.jpg')] bg-cover bg-center bg-no-repeat;
+}

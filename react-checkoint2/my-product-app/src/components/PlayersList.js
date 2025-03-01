@@ -1,6 +1,6 @@
 import React from "react";
 import players from "../players";
-import Player from "/Player";
+import Player from "./Player";
 import { Container, Row, Col } from "react-bootstrap";
 
 const PlayersList = () => {

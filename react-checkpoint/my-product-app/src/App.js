@@ -5,6 +5,7 @@ import Price from "./components/Price";
 import Description from "./components/Description";
 import Image from "./components/Image";
 
+
 const firstName = "John"; // Change this to an empty string "" to test the fallback message
 
 const App = () => {

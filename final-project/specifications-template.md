@@ -37,6 +37,9 @@ _(Choose one by marking an "X")_
 #### proposed solution :
 
 (we propose ......)
+### 4.2 Service (Logistique)
+#### problem:
+gestion de stock
 
 ## **5. Features & Functionalities**
 

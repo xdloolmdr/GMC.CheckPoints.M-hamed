@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const UserList = () => {
-  const [listOfUsers, setListOfUsers] = useState([]); // State to store users
+  const [listOfUsers, setListOfUsers] = useState([]);
 
   useEffect(() => {
-    // Fetch users from JSONPlaceholder API
     axios
       .get("https://jsonplaceholder.typicode.com/users")
-      .then((response) => {
-        setListOfUsers(response.data); // Save data in state
-      })
-      .catch((error) => {
-        console.error("Error fetching users:", error);
-      });
-  }, []); // Empty dependency array means it runs once on mount
+      .then((response) => setListOfUsers(response.data))
+      .catch((error) => console.error("Error fetching users:", error));
+  }, []);
 
   return (
-    <div className="user-list">
+    <div style={{ textAlign: "center", padding: "20px" }}>
       <h2>User List</h2>
-      <ul>
+      <ul style={{ listStyle: "none", padding: 0 }}>
         {listOfUsers.map((user) => (
-          <li key={user.id}>
-            <h3>{user.name}</h3>
-            <p>Email: {user.email}</p>
-            <p>Company: {user.company.name}</p>
+          <li key={user.id} style={{ margin: "10px 0" }}>
+            <Link
+              to={`/user/${user.id}`}
+              style={{
+                textDecoration: "none",
+                fontSize: "18px",
+                color: "blue",
+              }}
+            >
+              {user.name}
+            </Link>
           </li>
         ))}
       </ul>

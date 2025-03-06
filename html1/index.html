@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white p-5 fixed w-full top-0 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#work" class="hover:text-gray-300">Work</a></li>
+                    <li><a href="#resume" class="hover:text-gray-300">Resume</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="text-center py-24 bg-gray-100 mt-16">
+        <h2 class="text-4xl font-semibold">Hi, I'm John Doe</h2>
+        <p class="mt-4 text-gray-700 text-lg">A passionate Web Developer with a love for clean and efficient code.</p>
+        <video class="mx-auto mt-6" width="600" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-10 bg-white">
+        <h2 class="text-4xl font-semibold text-center">Work</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold text-xl">Project 1</h3>
+                <p>Innovative web application.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold text-xl">Project 2</h3>
+                <p>Interactive mobile-friendly design.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="font-bold text-xl">Project 3</h3>
+                <p>Modern and responsive UI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-200 text-center">
+        <h2 class="text-4xl font-semibold">Resume</h2>
+        <table class="table-auto border-collapse border border-gray-400 w-3/4 mx-auto mt-6">
+            <thead>
+                <tr class="bg-gray-300">
+                    <th class="border border-gray-400 p-2">Year</th>
+                    <th class="border border-gray-400 p-2">Company</th>
+                    <th class="border border-gray-400 p-2">Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-400 p-2">2023</td>
+                    <td class="border border-gray-400 p-2">TechCorp</td>
+                    <td class="border border-gray-400 p-2">Frontend Developer</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-400 p-2">2022</td>
+                    <td class="border border-gray-400 p-2">DesignHub</td>
+                    <td class="border border-gray-400 p-2">UI/UX Designer</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-4xl font-semibold">Contact Me</h2>
+        <form class="mt-6 space-y-4 max-w-lg mx-auto">
+            <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg" required>
+            <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required>
+            <textarea placeholder="Message" class="w-full p-3 border rounded-lg" required></textarea>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4">
+        &copy; 2025 John Doe | <a href="#" class="underline">LinkedIn</a> | <a href="#" class="underline">GitHub</a>
+    </footer>
+    
+</body>
+</html>

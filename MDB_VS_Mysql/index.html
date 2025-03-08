@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MongoDB vs SQL Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <div class="max-w-4xl mx-auto p-10">
+      <!-- Slide 1: Title -->
+      <section class="text-center py-10">
+        <h1 class="text-4xl font-bold">
+          MongoDB vs SQL: A Comparative Analysis
+        </h1>
+        <p class="text-lg mt-4">
+          Understanding the Differences Between NoSQL and SQL Databases
+        </p>
+      </section>
+
+      <!-- Slide 2: Introduction to SQL -->
+      <section class="bg-white shadow-lg p-6 rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold">Introduction to SQL Databases</h2>
+        <ul class="list-disc mt-4 ml-6">
+          <li>
+            Structured Query Language (SQL) databases store structured data in
+            tables.
+          </li>
+          <li>Uses fixed schema and predefined structures.</li>
+          <li>Ensures ACID compliance for data integrity.</li>
+          <li><strong>Examples:</strong> MySQL, PostgreSQL, SQL Server.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 3: Introduction to MongoDB -->
+      <section class="bg-white shadow-lg p-6 rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold">Introduction to MongoDB (NoSQL)</h2>
+        <ul class="list-disc mt-4 ml-6">
+          <li>Stores data as flexible JSON-like documents (BSON).</li>
+          <li>Schema-less structure allows easy scalability.</li>
+          <li>
+            Follows BASE model (Basically Available, Soft state, Eventually
+            consistent).
+          </li>
+          <li><strong>Use Cases:</strong> Big Data, IoT, Social Media.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4: SQL vs MongoDB Comparison Table -->
+      <section class="bg-white shadow-lg p-6 rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold">SQL vs MongoDB – Key Differences</h2>
+        <table class="w-full border-collapse border border-gray-300 mt-4">
+          <tr class="bg-gray-200">
+            <th class="border p-3">Feature</th>
+            <th class="border p-3">SQL Databases</th>
+            <th class="border p-3">MongoDB (NoSQL)</th>
+          </tr>
+          <tr>
+            <td class="border p-3">Structure</td>
+            <td class="border p-3">Tables (Rows & Columns)</td>
+            <td class="border p-3">Documents (JSON/BSON)</td>
+          </tr>
+          <tr>
+            <td class="border p-3">Schema</td>
+            <td class="border p-3">Fixed Schema</td>
+            <td class="border p-3">Dynamic Schema</td>
+          </tr>
+          <tr>
+            <td class="border p-3">Scalability</td>
+            <td class="border p-3">Vertical Scaling</td>
+            <td class="border p-3">Horizontal Scaling</td>
+          </tr>
+          <tr>
+            <td class="border p-3">Transactions</td>
+            <td class="border p-3">ACID Compliance</td>
+            <td class="border p-3">BASE Model</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Slide 5: Conclusion -->
+      <section class="bg-white shadow-lg p-6 rounded-lg mt-6">
+        <h2 class="text-2xl font-semibold">Conclusion – When to Use What?</h2>
+        <ul class="list-disc mt-4 ml-6">
+          <li>
+            <strong>Use SQL:</strong> When data integrity and complex
+            relationships are required (e.g., Banking Systems).
+          </li>
+          <li>
+            <strong>Use MongoDB:</strong> When flexibility and scalability are
+            needed (e.g., Real-time Apps, IoT).
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

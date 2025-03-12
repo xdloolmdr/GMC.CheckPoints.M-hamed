@@ -18,6 +18,6 @@ CREATE table orders(
     foreign key(Product_ID) references Product(Product_ID)
 );
 alter table orders
-add orderDate date;
+add orderDate date default sysdate();
 alter table Customer
 add Category varchar(20);

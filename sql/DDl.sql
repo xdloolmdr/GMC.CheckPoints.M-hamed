@@ -6,7 +6,7 @@ CREATE table Customer(
 CREATE table Product(
     Product_ID varchar(20) primary key not null,
     Product_Name varchar(40) not null,
-    Product_Tel float
+    price float check (price > 0)
 );
 CREATE table orders(
     Quantity float,
@@ -18,6 +18,6 @@ CREATE table orders(
     foreign key(Product_ID) references Product(Product_ID)
 );
 alter table orders
-add orderDate date default sysdate();
-alter table Customer
+add orderDate datetime default current_timestamp;
+alter table Product
 add Category varchar(20);
